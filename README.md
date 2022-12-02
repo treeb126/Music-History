@@ -10,7 +10,9 @@
 
 - accordion
 - pop-up modal
--
+- alert
+- tabs
+- side menu with music icon (screen-width <= 1000px)
 
 ### To add:
 
