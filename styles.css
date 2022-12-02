@@ -1174,7 +1174,7 @@ body.modal-open {
 /* MEDIEVAL */
 
 #medieval-header {
-    background: linear-gradient(to top, rgba(105, 79, 79, 0.64), rgba(97, 76, 76, 0.8)), url(./images/medieval.jpg) no-repeat center center;
+    background: linear-gradient(to top, rgba(105, 79, 79, 0.64), rgba(97, 76, 76, 0.8)), url(./images/medieval.jpg) no-repeat top center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -1266,15 +1266,10 @@ body.modal-open {
     margin-bottom: 1.5rem;
 }
 
-.image-div {
-    background: var(--light-brown);
-    padding-bottom: 2rem;
-    padding-top: 8rem;
-}
-
 #dedication-main img {
     display: block;
-    margin: 4rem auto;
+    margin: auto;
+    padding-top: 8rem;
     width: 20rem;
 }
 
@@ -1297,11 +1292,19 @@ body.modal-open {
 }
 
 #dedication-eulogy {
-    width: 40%;
+    width: 100%;
+    max-width: 40rem;
     margin:auto;
     text-align: justify;
 }
 
 #dedication-main p {
     margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #dedication-main img {
+        padding-top: 6rem;
+    }
 }
