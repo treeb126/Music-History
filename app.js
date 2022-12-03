@@ -178,13 +178,9 @@ for (let e of tabLinks) {
       let li = `<li>${item}</li>`;
       worksUL.push(li);
     });
-    worksUL.join();
-    // let works = () => {
-    //   for (let work in composer.works) {
-    //     console.log(work);
-    //     worksUL += `<li>${work}</li>`;
-    //   }
-    // };
+    worksUL = worksUL.join();
+    worksUL = worksUL.replace(/,/g, '');
+    // console.log(worksUL);
     
     tabContent.innerHTML = `<div class="tab-pic-container">
     <img
